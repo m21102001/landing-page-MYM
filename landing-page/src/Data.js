@@ -1,20 +1,40 @@
-export const people = [
+
+export const helpus = [
     {
-      name: 'Calvin Hawkins',
-      email: 'calvin.hawkins@example.com',
-      image:
-        'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      heading: 'الاتصال بك',
+      description: 'أخبرنا بأي شئ تريد تصميمه',
+      image: "assets/call.png",
+      number: 1
     },
     {
-      name: 'Kristen Ramos',
-      email: 'kristen.ramos@example.com',
-      image:
-        'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      heading: 'الخطة',
+      description: 'سوف نقوم بعمل خطه بناء متكامله',
+      image: "assets/plan.png",
+      number: 2
     },
     {
-      name: 'Ted Fox',
-      email: 'ted.fox@example.com',
-      image:
-        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      heading: 'التصميم',
+      description: 'تصميم الواجهات تصميم مرن و فعال مع المستخدم',
+      image: "assets/design.png",
+      number: 3
     },
+    {
+      heading: 'البرمجة',
+      description: 'نقوم بكتابه الكود و عمل قواعد البيانات و ربطها',
+      image: "assets/programming.png",
+      number : 4
+    },
+    {
+      heading: 'الفحص النهائى',
+      description: 'سوف نقوم بفحص الكود و تأمينه من الثغرات',
+      image: "assets/finalCheck.png",
+      number : 5
+    },
+    {
+      heading: 'النشر',
+      description: 'سوف نقوم برفع التطبيق او الموقع و نشرة لتبدا بجني الارباح',
+      image: "assets/publish.png",
+      number: 6
+    },
+
   ]

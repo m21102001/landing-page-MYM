@@ -1,10 +1,12 @@
 import './App.css'
+import Aboutus from './Components/Aboutus'
+import Helpus from './Components/Helpus'
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
+      {/* <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1>
       <div className="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
@@ -26,7 +28,9 @@ function App() {
     <div className="text-xl font-medium text-black">ChitChat</div>
     <p className="text-slate-500">You have a new message!</p>
   </div>
-</div>
+</div> */}
+    <Aboutus/>
+    <Helpus/>
     </>
   )
 }
