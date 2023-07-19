@@ -1,6 +1,7 @@
 import './App.css'
 import Aboutus from './Components/Aboutus'
 import Helpus from './Components/Helpus'
+import Header from './Components/header/Header'
 
 function App() {
 
@@ -31,7 +32,11 @@ function App() {
 </div> */}
     <Aboutus/>
     <Helpus/>
+      <div className='bg-white h-screen w-screen dark:bg-slate-800'>
+        <Header/>
+      </div>
     </>
+
   )
 }
 
