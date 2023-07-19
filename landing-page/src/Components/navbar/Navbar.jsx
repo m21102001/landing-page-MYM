@@ -1,7 +1,8 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import ThemeSwitcher from '../ThemeSwitcher'
+import ThemeSwitcher from "../ThemeSwitcher.jsx";
+
 
 const navigation = [
   { name: 'الرئسيه', href: '#Home', current: true },
@@ -17,7 +18,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800 header dark:bg-dark-800">
+    <Disclosure as="nav" className="bg-gray-100 text-black header dark:bg-slate-800">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
