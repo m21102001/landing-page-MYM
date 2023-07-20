@@ -22,6 +22,8 @@
 
 .technologies-card:hover .technologies-number {
     box-shadow: 0 0 0 500px #37ABDE;
+    background-color: white;
+    color: #37ABDE;
 }
 
 .technologies-card:hover .technologies-name {
