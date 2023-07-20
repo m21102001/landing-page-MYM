@@ -1,9 +1,15 @@
+.aboutus-container{
+    text-align: center;
+    margin: 2rem;
+}
+
 .aboutus-heading{
     font-family: Cairo;
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-bottom: 1rem;
 }
 .aboutus-subtitle{
     font-family: Cairo;
@@ -11,12 +17,16 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-bottom: 1rem;
+
 }
 .aboutus-description{
     text-align: right;
     font-family: Cairo;
     font-size: 24px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
+    margin-bottom: 1rem;
+    margin: 0 4rem;
 }
