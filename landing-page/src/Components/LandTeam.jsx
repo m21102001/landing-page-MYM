@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import Team from '../assets/Team.png'
+import { useState } from 'react'
 import Data from '../data.json'
 import { FaGithub, FaLinkedin, FaBehance } from 'react-icons/fa';
 
@@ -19,30 +18,30 @@ const LandTeam = () => {
   return (
       
 
-<div class="content w-[100%] p-0 m-0 justify-center   ">
-  <div class="container-Landing">
-    <div class="head">
-      <h1 class="text-center pt-20 text-5xl font-bold">فريق العمل</h1>
+<div className="content w-[100%] p-0 m-0 justify-center   ">
+  <div className="container-Landing">
+    <div className="head">
+      <h1 className="text-center pt-20 text-5xl font-bold">فريق العمل</h1>
     </div>
-    <div class="header pt-8 text-center">
-      <ul class="flex flex-wrap justify-center">
-        <li class="p-3 rounded-lg">
-          <button  onClick={() =>HandelJobfilter("Back-End")} class="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg  font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white">قواعد البيانات</button>
+    <div className="header pt-8 text-center">
+      <ul className="flex flex-wrap justify-center">
+        <li className="p-3 rounded-lg">
+          <button  onClick={() =>HandelJobfilter("Back-End")} className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg  font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white">قواعد البيانات</button>
         </li>
-        <li class="p-3 rounded-lg">
-          <button onClick={() =>HandelJobfilter("Owner")} class="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white "> المدير</button>
+        <li className="p-3 rounded-lg">
+          <button onClick={() =>HandelJobfilter("Owner")} className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white "> المدير</button>
         </li>
-        <li class="p-3 rounded-lg">
-          <button  onClick={() =>HandelJobfilter("UI-UX")} class="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg text-[14px] font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white">  مصمم الوجهات</button>
+        <li className="p-3 rounded-lg">
+          <button  onClick={() =>HandelJobfilter("UI-UX")} className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg text-[14px] font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white">  مصمم الوجهات</button>
         </li>
-        <li class="p-3 rounded-lg">
-          <button onClick={() =>HandelJobfilter("Flutter")} class="border border-[#37ABDE] p-2 text-center w-40 text-[14px] bg-white text-[#9D9D9D] rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white">مطور تطبيقات الهاتف</button>
+        <li className="p-3 rounded-lg">
+          <button onClick={() =>HandelJobfilter("Flutter")} className="border border-[#37ABDE] p-2 text-center w-40 text-[14px] bg-white text-[#9D9D9D] rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white">مطور تطبيقات الهاتف</button>
         </li>
-        <li class="p-3 rounded-lg">
-          <button onClick={() =>HandelJobfilter("Frontend")} class="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg  font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white "> مطورالويب</button>
+        <li className="p-3 rounded-lg">
+          <button onClick={() =>HandelJobfilter("Frontend")} className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg  font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white "> مطورالويب</button>
         </li>
-        <li class="p-3 rounded-lg">
-          <button onClick={() =>HandelJobfilter("all")} class="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D]   rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white"> الكل</button>
+        <li className="p-3 rounded-lg">
+          <button onClick={() =>HandelJobfilter("all")} className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D]   rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white"> الكل</button>
         </li>
       </ul>
     </div>
