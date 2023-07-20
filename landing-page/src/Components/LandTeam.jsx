@@ -24,7 +24,7 @@ const LandTeam = () => {
     <div class="head">
       <h1 class="text-center pt-20 text-5xl font-bold">فريق العمل</h1>
     </div>
-    <div class="header pt-8 text-center">
+    <div class="pt-8 text-center">
       <ul class="flex flex-wrap justify-center">
         <li class="p-3 rounded-lg">
           <button  onClick={() =>HandelJobfilter("Back-End")} class="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg  font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white">قواعد البيانات</button>
