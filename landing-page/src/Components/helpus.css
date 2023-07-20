@@ -1,0 +1,92 @@
+@keyframes rotation1{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+@keyframes rotation2{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+
+.helpus_container{
+    margin: 4rem;
+}
+
+
+.helpus_heading{
+    font-family: Cairo;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.helpus_description{
+    font-family: Cairo;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+/* .circle-container{
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    justify-content: center;
+}
+.circle{
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    border: 2px dashed gray;
+    margin-top: 2rem;
+    animation-name: rotation1;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    
+}
+.child-circle{
+    width: 560px;
+    height: 560px;
+    border-radius: 50%;
+    border: 2px dashed gray;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    animation-name: rotation2;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+} */
+.card{
+    text-align: right;
+    width: 100%;
+    height: 100%;
+}
+.container_cards{
+    width: 100%;
+    margin: 0 4rem;
+
+}
+/* .card::before{
+    content: "1";
+} */
+.number{
+    background-color: #37ABDE;
+    color: white;
+    height: 30px;
+    width: 32px;
+    float: right;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px ;
+    margin-right: 1rem;
+}
+
+
+@media (max-width: 768px){
+        .container_cards{
+            margin: 0;
+        } 
+}
