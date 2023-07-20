@@ -1,6 +1,8 @@
 import './App.css'
 import Aboutus from './Components/Aboutus'
 import Helpus from './Components/Helpus'
+import Header from './Components/header/Header'
+import LandTeam from './Components/LandTeam'
 
 function App() {
 
@@ -29,12 +31,13 @@ function App() {
     <p className="text-slate-500">You have a new message!</p>
   </div>
 </div> */}
-    <Aboutus/>
-    <Helpus/>
-      {/* <div className='bg-white h-screen w-screen dark:bg-slate-800'>
+
+      <div className='bg-white h-screen w-screen dark:bg-slate-800'>
         <Header/>
         <LandTeam/>
-      </div> */}
+        <Aboutus/>
+        <Helpus/>
+      </div>
     </>
 
   )
