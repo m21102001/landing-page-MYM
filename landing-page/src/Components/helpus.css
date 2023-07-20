@@ -1,11 +1,11 @@
-/* @keyframes rotation1{
+@keyframes rotation1{
     from{ transform: rotate(-360deg); }
     to{ transform: rotate(360deg); }
 }
 @keyframes rotation2{
     from{ transform: rotate(-360deg); }
     to{ transform: rotate(360deg); }
-} */
+}
 
 
 .helpus_container{
