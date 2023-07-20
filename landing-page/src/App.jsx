@@ -3,6 +3,7 @@ import Aboutus from './Components/Aboutus'
 import Helpus from './Components/Helpus'
 import Header from './Components/header/Header'
 import LandTeam from './Components/LandTeam'
+import Footer from './Components/footer/Footer'
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         <LandTeam/>
         <Aboutus/>
         <Helpus/>
+        <Footer/>
       </div>
     </>
 
