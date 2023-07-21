@@ -80,27 +80,7 @@ const LandTeam = () => {
       </div>
 
 
-    {/* <div  className="w-64 bg-white rounded-lg shadow-md p-4 m-4 flex flex-col items-center justify-center ">
-  <img src={Team} alt="" className="w-full h-40 object-cover mb-4 rounded-[50%]   " />
-  <div>
-    <h3 className="text-xl font-semibold mb-2">ahmed mohamed</h3>
-    <p className="text-gray-600 mb-4"> Head of Web Development</p>
-    <div className="flex space-x-4 justify-center">
-      <a href='https://www.linkedin.com/feed/?trk=404_page' target="_blank" rel="noopener noreferrer">
-      <FaLinkedin className='rounded-full text-[#37ABDE] bg-[#fff]'/>
-      </a>
-      <a href='https://github.com/FatimaOElfar' target="_blank" rel="noopener noreferrer">
-         <FaGithub className='rounded-full text-[#37ABDE] bg-[#fff]'/>
-      </a>
-      <a href='' target="_blank" rel="noopener noreferrer">
-        <FaBehance className='rounded-full text-[#37ABDE] bg-[#fff]'/>
-
-       
-      </a>
-    </div>
-  </div>
-</div> */}
-
+  
 
 
   </div>
