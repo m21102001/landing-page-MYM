@@ -6,7 +6,7 @@ import iphone from '../assets/iphone.png'
 const Developerflutter = () => {
   return (
     <div className=''>
-      <div className='header text-center mt-[20px] '>
+      <div className=' text-center  '>
         <h1 className='text-[#000000] text-[48px]  font-semibold '>ويمكننا <span className='text-[#37ABDE]' >تطوير تطبيقات الهاتف</span></h1>
         <p className='text-[gray] text-[20px] font-medium m-auto max-w-[600px] md:px-[20px]'>أخبرنا بفكرة تطبيقك وسنساعدك على إحياء هذه الفكرة من خلال إنشاء تطبيقات / موقع ويب من البداية يناسب احتياجاتك</p>
       </div>
