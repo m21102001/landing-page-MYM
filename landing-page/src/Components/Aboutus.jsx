@@ -1,6 +1,7 @@
 import "./aboutus.css"
 import {IoEarthOutline }from "react-icons/io5";
 import {BiCodeCurly} from "react-icons/bi";
+
 import iphone from '../assets/iphone.png'
 
 function Aboutus() {
@@ -20,6 +21,7 @@ function Aboutus() {
         </div>
         <h1 className='text-[24px] font-semibold mx-4 text-right text-[#000000]'>+10</h1>
         <p className='text-[14px] font-medium mx-4 text-right mt-[10px] pb-[20px]'>عمل تطبيقات هاتف في الشرق الاوسط و الوطن العربي</p>
+
        </div>
 
        </div>
@@ -34,6 +36,7 @@ function Aboutus() {
         </div>
         <h1 className='text-[24px] font-semibold mx-4 text-right text-[#000000]'>+13</h1>
         <p className='text-[14px] font-medium mx-4 text-right mt-[10px] pb-[20px]'>عمل تطبيقات هاتف في الشرق الاوسط و الوطن العربي</p>
+
        </div>
 
        </div>
