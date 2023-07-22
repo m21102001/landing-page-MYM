@@ -1,6 +1,10 @@
 // import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {MdDeveloperMode} from "react-icons/md"
+import {MdDesignServices} from "react-icons/md"
+import {IoEarthOutline} from "react-icons/io5";
+import {LiaCopy} from "react-icons/lia"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,7 +14,7 @@ import './styles.css';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
-import Card from '../Card';
+// import Card from '../Card';
 
 // import services from '../../Data'
 
@@ -18,38 +22,26 @@ export default function Services() {
   const swipers = [
     {
       id: 1,
-      image: 'Vector',
+      image: <MdDeveloperMode/>,
       title: 'برمجة التطبقيات',
       content: 'تصميم جذاب , يدعم جميع الاجهزة الاندرويد و الايفون بكل الاصدارات ، حق تملك كامل ل السورس كود, دعم ٢٤ ساعة'
     },
     {
       id: 2,
-      image: 'Vector',
-      title: 'برمجة التطبقيات',
+      image: <LiaCopy/>,
+      title: 'تصميم واجهة المستخدم',
       content: 'تصميم جذاب , يدعم جميع الاجهزة الاندرويد و الايفون بكل الاصدارات ، حق تملك كامل ل السورس كود, دعم ٢٤ ساعة'
     },
     {
       id: 3,
-      image: 'Vector',
-      title: 'برمجة التطبقيات',
+      image: <MdDesignServices/>,
+      title: 'التصميم الجرافيك',
       content: 'تصميم جذاب , يدعم جميع الاجهزة الاندرويد و الايفون بكل الاصدارات ، حق تملك كامل ل السورس كود, دعم ٢٤ ساعة'
     },
     {
       id: 4,
-      image: 'Vector',
-      title: 'برمجة التطبقيات',
-      content: 'تصميم جذاب , يدعم جميع الاجهزة الاندرويد و الايفون بكل الاصدارات ، حق تملك كامل ل السورس كود, دعم ٢٤ ساعة'
-    },
-    {
-      id: 5,
-      image: 'Vector',
-      title: 'برمجة التطبقيات',
-      content: 'تصميم جذاب , يدعم جميع الاجهزة الاندرويد و الايفون بكل الاصدارات ، حق تملك كامل ل السورس كود, دعم ٢٤ ساعة'
-    },
-    {
-      id: 6,
-      image: 'Vector',
-      title: 'برمجة التطبقيات',
+      image: <IoEarthOutline/>,
+      title: 'مواقع الويب',
       content: 'تصميم جذاب , يدعم جميع الاجهزة الاندرويد و الايفون بكل الاصدارات ، حق تملك كامل ل السورس كود, دعم ٢٤ ساعة'
     },
 
@@ -57,8 +49,8 @@ export default function Services() {
   return (
     <>
       <Swiper
-        slidesPerView={'auto'}
         centeredSlides={true}
+        slidesPerView={3}
         spaceBetween={10}
         pagination={{
           clickable: true,
