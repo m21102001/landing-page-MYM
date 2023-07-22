@@ -3,7 +3,7 @@ import './headar.css'
 
 const Header = () => {
     return (
-        <div className='header h-full'>
+        <div className='header h-full overflow-hidden'>
             <Navbar />
             <div className='flex container mx-auto justify-between'>
                 <div className='header-text text-white'>
