@@ -10,7 +10,6 @@ import './styles.css';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
-import Card from '../Card';
 
 // import services from '../../Data'
 
