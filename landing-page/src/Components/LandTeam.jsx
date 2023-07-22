@@ -18,7 +18,7 @@ const LandTeam = () => {
   return (
       
 
-<div className="content w-[100%] p-0 m-0 justify-center   ">
+<div className="content w-[100%] p-0 m-0 justify-center">
   <div className="container-Landing">
     <div className="head">
       <h1 className="text-center pt-20 text-5xl font-bold">فريق العمل</h1>
@@ -51,12 +51,12 @@ const LandTeam = () => {
     <div className="image grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] text-center gap-10 w-[100%]">
       {filteredImages.map((data) => {
             return (
-              <div  className="w-64 bg-white rounded-lg shadow-md p-4 m-4 flex flex-col items-center justify-center " key={data.id}>
+              <div className="bg-white rounded-lg shadow-md p-4 m-4 flex flex-col items-center justify-center" key={data.id}>
               <img src={data.link} alt="" className="w-full h-40 object-cover mb-4 rounded-[50%]   " />
               <div>
                 <h3 className="text-xl font-semibold mb-2">{data.Name}</h3>
                 <p className="text-gray-600 mb-4"> {data.job}</p>
-                <div className="flex space-x-4 justify-center">
+                <div className="flex space-x-2 space-x-reverse justify-center">
                   <a href={data.Linked} target="_blank" rel="noopener noreferrer">
                   <FaLinkedin className='rounded-full text-[#37ABDE] bg-[#fff]'/>
                   </a>
@@ -66,7 +66,7 @@ const LandTeam = () => {
                   <a href='' target="_blank" rel="noopener noreferrer">
                     <FaBehance className='rounded-full text-[#37ABDE] bg-[#fff]'/>
             
-                   
+ 
                   </a>
                 </div>
               </div>

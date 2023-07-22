@@ -1,6 +1,7 @@
 import './App.css'
 import Aboutus from './Components/Aboutus'
 import Developerflutter from './Components/Developerflutter'
+import Footer from './Components/footer/Footer'
 import Header from './Components/header/Header'
 import Helpus from './Components/Helpus'
 import LandTeam from './Components/LandTeam'
@@ -16,6 +17,7 @@ function App() {
         <LandTeam/>
         <TechnologiesUsed/>
         <Developerflutter/>
+        <Footer/>
       </div>
   )
 }

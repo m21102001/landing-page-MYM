@@ -1,7 +1,7 @@
 import React from 'react'
 import {PiBracketsCurly }from 'react-icons/pi';
 import {TbDevicesStar} from 'react-icons/tb'
-import iphone from '../assets/iphone.png'
+import iphone2 from '../assets/iphone2.png'
 
 const Developerflutter = () => {
   return (
@@ -31,8 +31,7 @@ const Developerflutter = () => {
        </div>
        </div>
        <div className='iphoneimage'>
-        <img src={iphone} alt="iphone-image" className='w-full' />
-
+        <img src={iphone2} alt="iphone-image" className='w-full' />
        </div>
        <div className='left flex flex-col mt-[30px]'>
        <div className='card3 w-[300px] bg-{#fff} shadow-md rounded-lg  '>
