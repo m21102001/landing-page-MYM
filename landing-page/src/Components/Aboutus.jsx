@@ -1,4 +1,3 @@
-import React from 'react'
 import "./aboutus.css"
 import {PiBracketsCurly }from 'react-icons/pi';
 import {TbDevicesStar} from 'react-icons/tb'
@@ -7,7 +6,7 @@ import iphone from '../assets/iphone.png'
 function Aboutus() {
     
     return (
-        <div className='aboutus-container'>
+        <div id='#AboutUs' className='aboutus-container' >
             <h1 className='aboutus-heading'>من نحن </h1>
             <h3 className='aboutus-subtitle'>هؤلاء وثقوا بنا , كن انت التالي</h3>
             <p className='aboutus-description'>
