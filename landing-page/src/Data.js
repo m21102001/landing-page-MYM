@@ -1,5 +1,3 @@
-import { number } from "prop-types"
-
   export const aboutus = [
     {
       heading: '10+',

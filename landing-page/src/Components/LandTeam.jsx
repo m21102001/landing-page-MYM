@@ -47,7 +47,7 @@ const LandTeam = () => {
     </div>
 
    
-
+    <div className='landteam-container m-10' >
     <div className="image grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] text-center gap-10 w-[100%]">
       {filteredImages.map((data) => {
             return (
@@ -77,7 +77,7 @@ const LandTeam = () => {
           })}
 
       </div>
-
+      </div>
 
   
 
