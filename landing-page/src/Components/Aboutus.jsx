@@ -1,7 +1,7 @@
 import React from 'react'
 import "./aboutus.css"
-import {PiBracketsCurly }from 'react-icons/pi';
-import {TbDevicesStar} from 'react-icons/tb'
+import {IoEarthOutline }from "react-icons/io5";
+import {BiCodeCurly} from "react-icons/bi";
 import iphone from '../assets/iphone.png'
 
 function Aboutus() {
@@ -15,13 +15,12 @@ function Aboutus() {
             </p>
             <div className='imageDev w-[80%] m-auto mt-[20px] grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] text-center gap-10 '>
        <div className='left flex flex-col mt-[30px]'>
-       <div className='card1 w-[300px] bg-{#fff} shadow-md rounded-lg  '>
-        <div className='icons flex flex-row  justify-between max-w-[150px] ml-[10px] mt-[20px] '> 
-        <PiBracketsCurly className='text-[#37ABDE] text-[40px] '/>
-        <TbDevicesStar  className='text-[#37ABDE] text-[30px] ' />
+       <div className='card1 bg-{#fff} shadow-md rounded-lg  '>
+        <div className='icons-aboutus flex flex-row  justify-between max-w-[150px] ml-[10px] mt-[20px] '> 
+        <BiCodeCurly className='text-[#37ABDE] text-[30px] '/>
         </div>
-        <h1 className='text-[24px] font-semibold text-center text-[#000000]'>كود قوي و مرن</h1>
-        <p className='text-[14px] font-medium text-center mt-[10px] pb-[20px]'>يتم تنظيم الكود الخاص بك و تأمينه ليمنحك افضل أداء</p>
+        <h1 className='text-[24px] font-semibold mx-4 text-right text-[#000000]'>+10</h1>
+        <p className='text-[14px] font-medium mx-4 text-right mt-[10px] pb-[20px]'>عمل تطبيقات هاتف في الشرق الاوسط و الوطن العربي</p>
        </div>
 
        </div>
@@ -30,13 +29,12 @@ function Aboutus() {
 
        </div>
        <div className='left flex flex-col mt-[30px]'>
-       <div className='card3 w-[300px] bg-{#fff} shadow-md rounded-lg  '>
-        <div className='icons flex flex-row  justify-between max-w-[150px] ml-[10px] mt-[20px] '> 
-        <PiBracketsCurly className='text-[#37ABDE] text-[40px] '/>
-        <TbDevicesStar  className='text-[#37ABDE] text-[30px] ' />
+       <div className='card3 bg-{#fff} shadow-md rounded-lg'>
+        <div className='icons-aboutus flex flex-row justify-between max-w-[150px] ml-[10px] mt-[20px] '> 
+        <IoEarthOutline className='text-[#37ABDE] text-[30px] '/>
         </div>
-        <h1 className='text-[24px] font-semibold text-center text-[#000000]'>تصميم واجهة المستخدم</h1>
-        <p className='text-[14px] font-medium text-center mt-[10px] pb-[20px]'>من خلال تزودنا بما تحتاجه سنعمل علي انشاء واجهه مصتخدم سهله و مرنه</p>
+        <h1 className='text-[24px] font-semibold mx-4 text-right text-[#000000]'>+13</h1>
+        <p className='text-[14px] font-medium mx-4 text-right mt-[10px] pb-[20px]'>عمل تطبيقات هاتف في الشرق الاوسط و الوطن العربي</p>
        </div>
 
        </div>

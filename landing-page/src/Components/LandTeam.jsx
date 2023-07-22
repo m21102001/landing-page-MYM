@@ -47,10 +47,11 @@ const LandTeam = () => {
     </div>
 
    
-
+    <div className='landteam-container m-10' >
     <div className="image grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] text-center gap-10 w-[100%]">
       {filteredImages.map((data) => {
             return (
+  
               <div className="bg-white rounded-lg shadow-md p-4 m-4 flex flex-col items-center justify-center" key={data.id}>
               <img src={data.link} alt="" className="w-full h-40 object-cover mb-4 rounded-[50%]   " />
               <div>
@@ -77,7 +78,7 @@ const LandTeam = () => {
           })}
 
       </div>
-
+      </div>
 
   
 

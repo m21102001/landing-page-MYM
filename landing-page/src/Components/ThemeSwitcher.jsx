@@ -26,7 +26,7 @@ const ThemeSwitcher = () => {
 	}
 
 	return (
-		<button onClick={handleThemeSwitch} className='bg-gray-100 dark:bg-slate-600 rounded-bl-lg p-2 text-yellow-500 dark:text-white'>
+		<button onClick={handleThemeSwitch} className='dark:bg-slate-600 rounded-bl-lg p-2 text-yellow-500 dark:text-white'>
 			{theme==='dark' ? <FaMoon/> : <BsSunFill/>}
 		</button>
 	)
