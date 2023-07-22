@@ -1,9 +1,7 @@
 .header{
     height: 100vh;
-    background-image: url("src/assets/images/Background.png");
-    background-position: center;
-    background-size: cover;
     position: relative;
+    background-color: #171836;
 }
 
 .header-text  {
