@@ -9,6 +9,7 @@ import Footer from './Components/footer/Footer'
 import Services from './Components/serveces/Services'
 // import BsWhatsapp from '@headlessui/react'
 import {BsWhatsapp} from'react-icons/bs'
+import ContactUs from './Components/contactus/ContactUs'
 function App() {
 
   return (
@@ -20,9 +21,10 @@ function App() {
         <LandTeam/>
         <TechnologiesUsed/>
         <Developerflutter/>
+        <ContactUs/>
         <Footer/>
         <div className="w-12 h-12 fixed left-5 bottom-5 rounded-lg bg-lime-700 hover:bg-lime-500 active:bg-lime-500 focus:outline-none focus:ring focus:ring-lime-300 flex flex-row justify-center items-center">
-          <a href="https://wa.me/qr/2PUHCENU7QALF1" >
+          <a href="https://wa.me/qr/2PUHCENU7QALF1" alt='whatspp' >
         <BsWhatsapp className='' />
           </a>
         </div>

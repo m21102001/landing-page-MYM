@@ -18,7 +18,7 @@ const LandTeam = () => {
   return (
       
 
-<div className="content w-[100%] p-0 m-0 justify-center">
+<div id='Team' className="content w-[100%] p-0 m-0 justify-center" >
   <div className="container-Landing">
     <div className="head">
       <h1 className="text-center pt-20 text-5xl font-bold">فريق العمل</h1>
@@ -57,13 +57,13 @@ const LandTeam = () => {
                 <h3 className="text-xl font-semibold mb-2">{data.Name}</h3>
                 <p className="text-gray-600 mb-4"> {data.job}</p>
                 <div className="flex space-x-2 space-x-reverse justify-center">
-                  <a href={data.Linked} target="_blank" rel="noopener noreferrer">
+                  <a alt="linkedin"  href={data.Linked} target="_blank" rel="noopener noreferrer">
                   <FaLinkedin className='rounded-full text-[#37ABDE] bg-[#fff]'/>
                   </a>
-                  <a href={data.github} target="_blank" rel="noopener noreferrer">
+                  <a alt="github" href={data.github} target="_blank" rel="noopener noreferrer">
                      <FaGithub className='rounded-full text-[#37ABDE] bg-[#fff]'/>
                   </a>
-                  <a href='' target="_blank" rel="noopener noreferrer">
+                  <a alt="be" href={data.be} target="_blank" rel="noopener noreferrer">
                     <FaBehance className='rounded-full text-[#37ABDE] bg-[#fff]'/>
             
  

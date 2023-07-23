@@ -1,4 +1,3 @@
-import React from 'react'
 import {PiBracketsCurly }from 'react-icons/pi';
 import {TbDevicesStar} from 'react-icons/tb'
 import iphone2 from '../assets/iphone2.png'

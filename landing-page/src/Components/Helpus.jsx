@@ -63,7 +63,7 @@ function Helpus() {
         </div>
     ));
   return (
-    <div className='helpus_container'>
+    <div className='helpus_container' id='Help-us'>
     <h1 className='helpus_heading'>نحن هنا <span style={{color: "#37ABDE"}}>لمساعدتك</span></h1>
     <p className='helpus_description'>تعرف علي خطوات العمل علي اي مشروع</p>
     <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-16 px-12'>
