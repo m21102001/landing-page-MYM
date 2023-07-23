@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <div className='header h-full overflow-hidden'>
             <Navbar />
-            <div className='flex container mx-auto justify-between'>
-                <div className='header-text text-white'>
+            <div className='flex container mx-5 space-around'>
+                <div className='header-text text-white mx-5'>
                     <h1 className="text-5xl font-bold text-white">
                         ابحث عن أفضل <span className='text-blue-600 border-green-800 p-1 border-2'>الحلول</span> البرمجية
                     </h1>

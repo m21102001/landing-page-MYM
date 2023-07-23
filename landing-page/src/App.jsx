@@ -25,7 +25,7 @@ function App() {
         <Footer/>
         <div className="w-12 h-12 fixed left-5 bottom-5 rounded-lg bg-lime-700 hover:bg-lime-500 active:bg-lime-500 focus:outline-none focus:ring focus:ring-lime-300 flex flex-row justify-center items-center">
           <a href="https://wa.me/qr/2PUHCENU7QALF1" alt='whatspp' >
-        <BsWhatsapp className='' />
+        <BsWhatsapp className='social-media' />
           </a>
         </div>
       </div>

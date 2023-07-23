@@ -1,14 +1,20 @@
 import './technologiesused.css'
 import { BiLogoFlutter } from 'react-icons/bi'
+import {BiLogoJavascript} from 'react-icons/bi'
+import {FaNodeJs} from 'react-icons/fa'
+import {FiFigma} from 'react-icons/fi'
+import {GiCyberEye} from 'react-icons/gi'
+import {BiLogoJava} from 'react-icons/bi'
+
 
 const TechnologiesUsed = () => {
   const technologies = [
-    { number: 1, name: 'Flutter', icon: <BiLogoFlutter /> },
-    { number: 2, name: 'Flutter', icon: <BiLogoFlutter /> },
+    { number: 1, name: 'FrontEnd', icon: <BiLogoJavascript /> },
+    { number: 2, name: 'BackEnd', icon: <FaNodeJs /> },
     { number: 3, name: 'Flutter', icon: <BiLogoFlutter /> },
-    { number: 4, name: 'Flutter', icon: <BiLogoFlutter /> },
-    { number: 5, name: 'Flutter', icon: <BiLogoFlutter /> },
-    { number: 6, name: 'Flutter', icon: <BiLogoFlutter /> },
+    { number: 4, name: 'UI/UX', icon: <FiFigma /> },
+    { number: 5, name: 'Cyber Security', icon: <GiCyberEye /> },
+    { number: 6, name: 'Java', icon: <BiLogoJava /> },
   ];
 
   return (

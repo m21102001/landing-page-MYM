@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import './styles.css';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import {Autoplay, Pagination, Navigation} from 'swiper/modules';
 
 // import services from '../../Data'
 
@@ -58,14 +58,19 @@ export default function Services() {
       <Swiper
         slidesPerView={'auto'}
         centeredSlides={true}
-        spaceBetween={10}
+        spaceBetween={30}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+      }}
         pagination={{
           clickable: true,
         }}
+        navigation={true}
         // slidesPerView={width > 1200 ? 2.3 : width > 1025 ? 1.7 : 1}
         watchOverflow={true}
         loop={true}
-        modules={[Pagination]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         {swipers.map((item, index) => {
