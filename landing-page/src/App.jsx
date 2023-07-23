@@ -7,6 +7,8 @@ import LandTeam from './Components/LandTeam'
 import TechnologiesUsed from './Components/TechnologiesUsed/TechnologiesUsed'
 import Footer from './Components/footer/Footer'
 import Services from './Components/serveces/Services'
+// import BsWhatsapp from '@headlessui/react'
+import {BsWhatsapp} from'react-icons/bs'
 function App() {
 
   return (
@@ -19,6 +21,11 @@ function App() {
         <TechnologiesUsed/>
         <Developerflutter/>
         <Footer/>
+        <div className="w-12 h-12 fixed left-5 bottom-5 rounded-lg bg-lime-700 hover:bg-lime-500 active:bg-lime-500 focus:outline-none focus:ring focus:ring-lime-300 flex flex-row justify-center items-center">
+          <a href="https://wa.me/qr/2PUHCENU7QALF1" >
+        <BsWhatsapp className='' />
+          </a>
+        </div>
       </div>
   )
 }
