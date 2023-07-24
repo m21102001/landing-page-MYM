@@ -1,4 +1,3 @@
-import React from 'react'
 import {PiBracketsCurly }from 'react-icons/pi';
 import {TbBrandSpeedtest} from "react-icons/tb";
 import {TbDevicesStar} from 'react-icons/tb'
