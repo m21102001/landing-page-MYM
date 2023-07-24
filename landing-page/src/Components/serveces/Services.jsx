@@ -61,7 +61,7 @@ export default function Services() {
     });
   }, []);
   return (
-    <div className='services py-10'>
+    <div className='services py-10' id='Services'>
       <div className="py-5 services-tital ">
       <h3 className='mb-2 text-2xl font-bold tracking-tight text-white'>خدمتنا</h3>
       <p className='mb-3 font-normal text-white'>كل الخدمات التي تحتاجونها في مكان واحد وبأيد أمينة</p>
