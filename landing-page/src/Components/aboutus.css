@@ -3,58 +3,34 @@
     margin: 2rem;
 }
 
-.aboutus-heading{
-    font-family: Cairo;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 1rem;
-}
-.aboutus-subtitle{
-    font-family: Cairo;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 1rem;
+/*.aboutus-heading{*/
+/*    font-size: 48px;*/
+/*    font-style: normal;*/
+/*    font-weight: 600;*/
+/*    line-height: normal;*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+/*.aboutus-subtitle{*/
+/*    font-size: 24px;*/
+/*    font-style: normal;*/
+/*    font-weight: 500;*/
+/*    line-height: normal;*/
+/*    margin-bottom: 1rem;*/
 
-}
-.aboutus-description{
-    text-align: right;
-    font-family: Cairo;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 1rem;
-    margin: 0 4rem;
-}
-.card1-container::before{
-    content: "1";
-    background-color: #37ABDE;
-    color: #fff;
-    border-radius: 0px 0px 0px 10px;
-    text-align: center;
-    width: 45px;
-    height: 45px;
-    padding-top:8px;
-    position: absolute;
-}
-.card2-container::before{
-    content: "2";
-    background-color: #37ABDE;
-    color: #fff;
-    border-radius: 0px 0px 0px 10px;
-    text-align: center;
-    width: 45px;
-    height: 45px;
-    padding-top:8px;
-    position: absolute;
-}
+/*}*/
+/*.aboutus-description{*/
+/*    text-align: right;*/
+/*    font-size: 24px;*/
+/*    font-style: normal;*/
+/*    font-weight: 500;*/
+/*    line-height: normal;*/
+/*    margin-bottom: 1rem;*/
+/*    margin: 0 4rem;*/
+/*}*/
 
-@media (max-width:768px) {
-    .iphone1{
+
+@media (max-width:1020px) {
+    .iphoneimage{
         display: none;
     }
 }
