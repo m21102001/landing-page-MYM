@@ -1,7 +1,10 @@
 .header{
     height: 100vh;
-    position: relative;
-    background-color: #171836;
+
+    background-image: url("src/assets/images/Background.png");
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
 }
 
 .header-text  {
@@ -37,7 +40,7 @@
     border:1px solid #37ABDE;
 }
 
-.header::after {
+/* .header::after {
     position: absolute;
     bottom: 0;
     content: "";
@@ -45,5 +48,5 @@
     width: 100%;
     height: 100px;
     opacity: 0.6;
-}
+} */
 
