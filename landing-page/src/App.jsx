@@ -6,6 +6,7 @@ import Header from './Components/header/Header'
 import Helpus from './Components/Helpus'
 import LandTeam from './Components/LandTeam'
 import TechnologiesUsed from './Components/TechnologiesUsed/TechnologiesUsed'
+
 import Footer from './Components/footer/Footer'
 import Services from './Components/serveces/Services'
 // import BsWhatsapp from '@headlessui/react'
@@ -16,6 +17,7 @@ function App() {
   return (
       <div className='bg-white h-full dark:text-gray-200 dark:bg-slate-900 duration-100'>
         <Header/>
+
         <Aboutus/>
         <Services/>
         <Helpus/>
