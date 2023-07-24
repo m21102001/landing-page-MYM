@@ -1,19 +1,19 @@
-import './App.css'
-import Aboutus from './Components/Aboutus'
-import Developerflutter from './Components/Developerflutter'
-import './i18'
-import Header from './Components/header/Header'
-import Helpus from './Components/Helpus'
-import LandTeam from './Components/LandTeam'
-import TechnologiesUsed from './Components/TechnologiesUsed/TechnologiesUsed'
+import "./App.css";
+import Aboutus from "./Components/Aboutus";
+import Developerflutter from "./Components/Developerflutter";
+import "./i18";
+import Header from "./Components/header/Header";
+import Helpus from "./Components/Helpus";
+import LandTeam from "./Components/LandTeam";
+import TechnologiesUsed from "./Components/TechnologiesUsed/TechnologiesUsed";
 
-import Footer from './Components/footer/Footer'
-import Services from './Components/serveces/Services'
+import Footer from "./Components/footer/Footer";
+import Services from "./Components/serveces/Services";
 // import BsWhatsapp from '@headlessui/react'
-import {BsWhatsapp} from'react-icons/bs'
-import ContactUs from './Components/contactus/ContactUs'
-function App() {
+import { BsWhatsapp } from "react-icons/bs";
+import ContactUs from "./Components/contactus/ContactUs";
 
+function App() {
   return (
       <div className='bg-white h-full dark:text-gray-200 dark:bg-slate-900 duration-100'>
         <Header/>
@@ -31,7 +31,8 @@ function App() {
           </a>
         </div>
       </div>
-  )
+
+  );
 }
 
-export default App
+export default App;

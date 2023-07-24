@@ -103,7 +103,7 @@ const LandTeam = () => {
           >
             {filteredImages.map((data) => (
               <SwiperSlide key={data.id}>
-                <div className="bg-white rounded-lg shadow-md p-4 m-2 mb-8 flex flex-col items-center justify-center">
+                <div className="bg-white rounded-lg shadow-md p-4  flex flex-col items-center justify-center">
                   <img
                     src={data.link}
                     alt=""
