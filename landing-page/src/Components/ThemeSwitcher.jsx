@@ -1,34 +1,30 @@
-import {useEffect, useState} from "react";
-import {FaMoon} from 'react-icons/fa';
-import {BsSunFill} from 'react-icons/bs'
+import {useState} from "react";
+import useDarkSide from "./useDarkSide.jsx";
+import {DarkModeSwitch} from "react-toggle-dark-mode";
 
 const ThemeSwitcher = () => {
-	const [theme, setTheme] = useState(null);
+	const [colorTheme, setTheme] = useDarkSide();
+	const [darkSide, setDarkSide] = useState(
+		colorTheme === "light" ? true : false
+	);
 
-
-	useEffect(() => {
-		if (window.matchMedia("prefer-color-schema:dark").matches){
-			setTheme("dark")
-		}else {
-			setTheme('light')
-		}
-	}, []);
-	useEffect(()=>{
-		if(theme==='dark'){
-			document.documentElement.classList.add('dark')
-		}else {
-			document.documentElement.classList.remove('dark')
-		}
-	},[theme])
-
-	const handleThemeSwitch=()=>{
-		setTheme(theme==='dark' ? 'light':'dark')
-	}
+	const toggleDarkMode = (checked) => {
+		setTheme(colorTheme);
+		setDarkSide(checked);
+	};
 
 	return (
-		<button onClick={handleThemeSwitch} className='bg-gray-100 dark:bg-slate-600 rounded-bl-lg p-2 text-yellow-500 dark:text-white'>
-			{theme==='dark' ? <FaMoon/> : <BsSunFill/>}
-		</button>
-	)
+		<>
+			<DarkModeSwitch
+				sunColor='#F28C38'
+				moonColor='#F5F3CE'
+				checked={darkSide}
+				onChange={toggleDarkMode}
+				size={30}
+			/>
+		</>
+	);
+
+
 }
 export default ThemeSwitcher

@@ -30,3 +30,31 @@
     margin-bottom: 1rem;
     margin: 0 4rem;
 }
+.card1-container::before{
+    content: "1";
+    background-color: #37ABDE;
+    color: #fff;
+    border-radius: 0px 0px 0px 10px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    padding-top:8px;
+    position: absolute;
+}
+.card2-container::before{
+    content: "2";
+    background-color: #37ABDE;
+    color: #fff;
+    border-radius: 0px 0px 0px 10px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    padding-top:8px;
+    position: absolute;
+}
+
+@media (max-width:768px) {
+    .iphone1{
+        display: none;
+    }
+}

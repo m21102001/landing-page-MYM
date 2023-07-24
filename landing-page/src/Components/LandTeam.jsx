@@ -132,14 +132,17 @@ const LandTeam = () => {
                       </a>
                     </div>
                   </div>
+
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
+
     </div>
   );
 };
 
 export default LandTeam;
+    
