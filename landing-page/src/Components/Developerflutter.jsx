@@ -40,7 +40,7 @@ const Developerflutter = () => {
                 </div>
        </div>
                 
-       <div className='iphoneimage'>
+       <div className='iphoneimage sm:hidden md:hidden lg:block'>
         <img src={iphone2} alt="iphone-image" className='w-full' />
        </div>
        <div className='left flex flex-col mt-[30px]'>
