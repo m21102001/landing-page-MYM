@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {MdDeveloperMode} from "react-icons/md"
+import {MdDesignServices} from "react-icons/md"
+import {IoEarthOutline} from "react-icons/io5";
+import {LiaCopy} from "react-icons/lia"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -9,7 +13,9 @@ import 'swiper/css/pagination';
 import './styles.css';
 
 // import required modules
+
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 
 // import services from '../../Data'
 export default function Services() {
@@ -48,6 +54,7 @@ export default function Services() {
       id: 6,
       image:'https://t3.ftcdn.net/jpg/03/36/94/42/240_F_336944276_tpWzmwFi6JfZln5VlfBC1BZu5jgDOAl8.jpg ',
       title: 'برمجة التطبقيات',
+
       content: 'تصميم جذاب , يدعم جميع الاجهزة الاندرويد و الايفون بكل الاصدارات ، حق تملك كامل ل السورس كود, دعم ٢٤ ساعة'
     },
 
@@ -67,8 +74,9 @@ export default function Services() {
       <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>كل الخدمات التي تحتاجونها في مكان واحد وبأيد أمينة</p>
       </div>
       <Swiper
-        // slidesPerView={3}
+
         centeredSlides={true}
+        slidesPerView={3}
         spaceBetween={10}
         autoplay={{
           delay: 2000000000,

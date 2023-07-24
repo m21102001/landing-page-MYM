@@ -13,10 +13,10 @@ function Aboutus() {
             <p className='aboutus-description'>
                 نحن نقوم بتوظيف امهر المهندسين من حول العالم ولدينا سجل حافل من العملاء حول العالم حيث اننا نحن نقدم جودة عالمية بافضل الخبرات والمطورين مع تكلفة مناسبة للجميع بداية من طلاب التخرج , مرورا باصحاب الشركات والافكار الناشئه , انتهاء بالشركات العملاقه وأنظمة الدفع والبنوك
             </p>
-            <div className='imageDev w-[80%] m-auto mt-[20px] grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] text-center gap-10 '>
-       <div className='left flex flex-col mt-[30px]'>
+            <div className='imageDev w-[100%] mt-[20px] grid grid-cols-[repeat(auto-fill,minmax(340px,1fr))] text-center gap-10 '>
+       <div className='card1-container left flex flex-col mt-[30px]'>
        <div className='card1 bg-{#fff} shadow-md rounded-lg  '>
-        <div className='icons-aboutus flex flex-row  justify-between max-w-[150px] ml-[10px] mt-[20px] '> 
+        <div className='icons-aboutus flex flex-row justify-end ml-[10px] mt-[20px] '> 
         <BiCodeCurly className='text-[#37ABDE] text-[30px] '/>
         </div>
         <h1 className='text-[24px] font-semibold mx-4 text-right text-[#000000]'>+10</h1>
@@ -26,12 +26,12 @@ function Aboutus() {
 
        </div>
        <div className='iphoneimage'>
-        <img src={iphone} alt="iphone-image" className='w-full' />
+        <img src={iphone} alt="iphone-image" className='iphone1 w-full' />
 
        </div>
-       <div className='left flex flex-col mt-[30px]'>
+       <div className='card2-container left flex flex-col mt-[30px]'>
        <div className='card3 bg-{#fff} shadow-md rounded-lg'>
-        <div className='icons-aboutus flex flex-row justify-between max-w-[150px] ml-[10px] mt-[20px] '> 
+        <div className='icons-aboutus flex flex-row justify-end ml-[10px] mt-[20px] '> 
         <IoEarthOutline className='text-[#37ABDE] text-[30px] '/>
         </div>
         <h1 className='text-[24px] font-semibold mx-4 text-right text-[#000000]'>+13</h1>
