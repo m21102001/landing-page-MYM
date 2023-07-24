@@ -13,7 +13,7 @@ import ContactUs from './Components/contactus/ContactUs'
 function App() {
 
   return (
-      <div className='bg-white h-full dark:bg-slate-800'>
+      <div className='bg-white h-full dark:text-gray-200 dark:bg-slate-900 duration-100'>
         <Header/>
         <Aboutus/>
         <Services/>
