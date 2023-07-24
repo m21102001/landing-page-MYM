@@ -1,6 +1,7 @@
 import './App.css'
 import Aboutus from './Components/Aboutus'
 import Developerflutter from './Components/Developerflutter'
+import './i18'
 import Header from './Components/header/Header'
 import Helpus from './Components/Helpus'
 import LandTeam from './Components/LandTeam'

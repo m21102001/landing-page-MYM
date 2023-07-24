@@ -1,7 +1,11 @@
 import Navbar from "../navbar/Navbar"
 import './headar.css'
+import { useTranslation } from 'react-i18next'
+
 
 const Header = () => {
+    const { t, i18n } = useTranslation()
+
     return (
         <div className='header h-full overflow-hidden'>
             <Navbar />
@@ -12,9 +16,11 @@ const Header = () => {
                     </h1>
                     <h5 className='my-4'>خيارك الاول لتحول فكرتك الي واقع مع افضل سعر ل اعلي جودة</h5>
                     <button>الحصول علي استشارة</button>
+                    <a href="">{t('title')}</a>
+
                 </div>
                 <div className='header-image'>
-                    <img className='' src='src/assets/images/Saly-19.png' alt='image'/>
+                    {/* <img className='' src='src/assets/images/Saly-19.png' alt='image'/> */}
                 </div>
             </div>
         </div>
