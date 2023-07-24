@@ -8,7 +8,7 @@ const navigation = [
   { name: 'الرئسيه', href: '#Home', current: true },
   { name: 'من نحن', href: '#AboutUs', current: false },
   { name: 'خدمانتا', href: '#Services', current: false },
-  { name: 'شركائنا', href: '#Compony', current: false },
+  { name: 'التقنيات', href: '#TechnologiesUsed', current: false },
   { name: 'فريق العمل', href: '#Team', current: false },
 ]
 
