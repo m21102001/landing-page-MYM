@@ -15,9 +15,7 @@ const Header = () => {
                         ابحث عن أفضل <span className='text-blue-600 border-green-800 p-1 border-2'>الحلول</span> البرمجية
                     </h1>
                     <h5 className='my-4'>خيارك الاول لتحول فكرتك الي واقع مع افضل سعر ل اعلي جودة</h5>
-                    <button>الحصول علي استشارة</button>
-                    <a href="">{t('title')}</a>
-
+                    <button>{t('title')}</button>
                 </div>
                 <div className='header-image'>
                      <img className='' src='src/assets/images/Saly-19.png' alt='image'/>
