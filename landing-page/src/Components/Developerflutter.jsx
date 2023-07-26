@@ -40,7 +40,7 @@ const Developerflutter = () => {
                 </div>
        </div>
                 
-       <div className='iphoneimage'>
+       <div className='iphoneimage sm:hidden md:hidden lg:block'>
         <img src={iphone2} alt="iphone-image" className='w-full' />
        </div>
        <div className='left flex flex-col mt-[30px]'>
@@ -51,7 +51,7 @@ const Developerflutter = () => {
                             <TbDevicesStar/>
                         </span>
                     </div>
-                    <div className='mx-16 flex flex-col justify-between'>
+                    <div className='mx-10 flex flex-col justify-between'>
                         <h3 className='text-right text-2xl mb-0'>تصميم واجهة المستخدم</h3>
                         <p className='text-md'>من خلال تزودنا بما تحتاجه سنعمل علي انشاء واجهه مصتخدم سهله و مرنه</p>
                     </div>
