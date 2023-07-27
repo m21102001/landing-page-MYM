@@ -5,8 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { useTranslation } from 'react-i18next'
+
 
 const LandTeam = () => {
+
+  const { t, i18n } = useTranslation()
+
+
   const [images, setImage] = useState(Data);
   console.log(Data);
   const [filter, setFilter] = useState("all");
@@ -20,7 +26,7 @@ const LandTeam = () => {
     <div className="  content w-full p-0 m-0 justify-center " id="Team">
       <div className="container-Landing">
         <div className="head">
-          <h2 className="text-center pt-20 text-5xl font-bold">فريق العمل</h2>
+          <h2 className="text-center pt-20 text-5xl font-bold">{t('Team-heading')}</h2>
         </div>
         <div className="pt-8 text-center">
           <ul className="flex flex-wrap justify-center">
@@ -30,7 +36,7 @@ const LandTeam = () => {
                 className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D]   rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white"
               >
                 {" "}
-                الكل
+                {t('land-Team-All')}
               </button>
             </li>
             <li className="p-3 rounded-lg">
@@ -39,7 +45,7 @@ const LandTeam = () => {
                 className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg  font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white "
               >
                 {" "}
-                مطورالويب
+                {t('land-Team-Web')}
               </button>
             </li>
             <li className="p-3 rounded-lg">
@@ -47,7 +53,7 @@ const LandTeam = () => {
                 onClick={() => HandelJobfilter("Flutter")}
                 className="border border-[#37ABDE] p-2 text-center w-40 text-[14px] bg-white text-[#9D9D9D] rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white"
               >
-                مطور تطبيقات الهاتف
+                {t('land-Team-Flutter')}
               </button>
             </li>
             <li className="p-3 rounded-lg">
@@ -56,7 +62,7 @@ const LandTeam = () => {
                 className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg text-[14px] font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white"
               >
                 {" "}
-                مصمم الوجهات
+                {t('land-Team-UX-UI')}
               </button>
             </li>
             <li className="p-3 rounded-lg">
@@ -65,7 +71,7 @@ const LandTeam = () => {
                 className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white "
               >
                 {" "}
-                المدير
+                {t('land-Team-Manager')}
               </button>
             </li>
             <li className="p-3 rounded-lg">
@@ -73,7 +79,7 @@ const LandTeam = () => {
                 onClick={() => HandelJobfilter("Back-End")}
                 className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg  font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white"
               >
-                قواعد البيانات
+                {t('land-Team-Backend')}
               </button>
             </li>
           </ul>

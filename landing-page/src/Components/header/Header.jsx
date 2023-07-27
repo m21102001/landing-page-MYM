@@ -12,10 +12,10 @@ const Header = () => {
             <div className='flex container mx-5 space-around'>
                 <div className='header-text text-white mx-5'>
                     <h1 className="text-5xl font-bold text-white">
-                        ابحث عن أفضل <span className='text-blue-600 border-green-800 p-1 border-2'>الحلول</span> البرمجية
+                        {t('Header-title')}<span className='text-blue-600 border-green-800 p-1 border-2'>{t('Header-span1')}</span> {t('Header-span2')}
                     </h1>
-                    <h5 className='my-4'>خيارك الاول لتحول فكرتك الي واقع مع افضل سعر ل اعلي جودة</h5>
-                    <button>{t('title')}</button>
+                    <h5 className='my-4'>{t('Header-description')}</h5>
+                    <button>{t('button')}</button>
                 </div>
                 <div className='header-image'>
                      <img className='' src='src/assets/images/Saly-19.png' alt='image'/>
