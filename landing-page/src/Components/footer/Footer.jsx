@@ -1,73 +1,78 @@
+import { t } from "i18next"
+import { useTranslation } from 'react-i18next'
 
 
 const Footer = () => {
+
+    const { t, i18n } = useTranslation()
+
     return (
       
   <footer className="bg-white dark:bg-gray-900">
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{t('Footer-copmany')}</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                      <a href="#AboutUs" className=" hover:underline">من نحن</a>
+                      <a href="#AboutUs" className=" hover:underline">{t('Footer-copmany-title1')}</a>
                   </li>
                   <li className="mb-4">
-                      <a href="#Services" className="hover:underline">خدمانتا</a>
+                      <a href="#Services" className="hover:underline">{t('Footer-copmany-title2')}</a>
                   </li>
                   <li className="mb-4">
-                      <a href="#Compony" className="hover:underline">شركائنا</a>
+                      <a href="#Compony" className="hover:underline">{t('Footer-copmany-title3')}</a>
                   </li>
                   <li className="mb-4">
-                      <a href="#Team" className="hover:underline">فريق العمل</a>
+                      <a href="#Team" className="hover:underline">{t('Footer-copmany-title4')}</a>
                   </li>
               </ul>
           </div>
           <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{t('Footer-HelpCenter')}</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                      <a href="#" className="hover:underline">Discord Server</a>
+                      <a href="#" className="hover:underline">{t('Footer-HelpCenter-title1')}</a>
                   </li>
                   <li className="mb-4">
-                      <a href="#" className="hover:underline">Twitter</a>
+                      <a href="#" className="hover:underline">{t('Footer-HelpCenter-title2')}</a>
                   </li>
                   <li className="mb-4">
-                      <a href="#" className="hover:underline">Facebook</a>
+                      <a href="#" className="hover:underline">{t('Footer-HelpCenter-title3')}</a>
                   </li>
                   <li className="mb-4">
-                      <a href="#" className="hover:underline">Contact Us</a>
+                      <a href="#" className="hover:underline">{t('Footer-HelpCenter-title4')}</a>
                   </li>
               </ul>
           </div>
           <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{t('Footer-LEGAL')}</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                      <a href="#" className="hover:underline">Privacy Policy</a>
+                      <a href="#" className="hover:underline">{t('Footer-LEGAL-title1')}</a>
                   </li>
                   <li className="mb-4">
-                      <a href="#" className="hover:underline">Licensing</a>
+                      <a href="#" className="hover:underline">{t('Footer-LEGAL-title2')}</a>
                   </li>
                   <li className="mb-4">
-                      <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                      <a href="#" className="hover:underline">{t('Footer-LEGAL-title3')} &amp; {t('Footer-LEGAL-title4')}</a>
                   </li>
               </ul>
           </div>
           <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{t('Footer-DOWNLOAD')}</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                      <a href="#" className="hover:underline">iOS</a>
+                      <a href="#" className="hover:underline">{t('Footer-DOWNLOAD-title1')}</a>
                   </li>
                   <li className="mb-4">
-                      <a href="#" className="hover:underline">Android</a>
+                      <a href="#" className="hover:underline">{t('Footer-DOWNLOAD-title2')}</a>
                   </li>
                   <li className="mb-4">
-                      <a href="#" className="hover:underline">Windows</a>
+                      <a href="#" className="hover:underline">{t('Footer-DOWNLOAD-title3')}</a>
                   </li>
                   <li className="mb-4">
-                      <a href="#" className="hover:underline">MacOS</a>
+                      <a href="#" className="hover:underline">{t('Footer-DOWNLOAD-title4')}</a>
                   </li>
               </ul>
           </div>

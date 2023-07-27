@@ -3,6 +3,8 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import ThemeSwitcher from "../ThemeSwitcher.jsx";
 import i18n from "../../i18.js";
+import { useTranslation } from 'react-i18next'
+
 
 const navigation = [
   { name: "الرئسيه", href: "#Home", current: true },
@@ -12,11 +14,23 @@ const navigation = [
   { name: "فريق العمل", href: "#Team", current: false },
 ];
 
+const navigationEn = [
+  { name: "Home", href: "#Home", current: true },
+  { name: "AboutUs", href: "#AboutUs", current: false },
+  { name: "Services", href: "#Services", current: false },
+  { name: "Technologies", href: "#TechnologiesUsed", current: false },
+  { name: "Team", href: "#Team", current: false },
+];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+
+
+
 export default function Navbar() {
+  const { t, i18n } = useTranslation()
   return (
     <Disclosure as="nav" className="bg-gray-100 dark:bg-slate-800">
       {({ open }) => (
@@ -121,7 +135,7 @@ export default function Navbar() {
                               i18n.changeLanguage("ar");
                             }}
                           >
-                            ar
+                            AR
                           </a>
                         )}
                       </Menu.Item>

@@ -5,9 +5,12 @@ import {FaNodeJs} from 'react-icons/fa'
 import {FiFigma} from 'react-icons/fi'
 import {GiCyberEye} from 'react-icons/gi'
 import {BiLogoJava} from 'react-icons/bi'
+import { useTranslation } from 'react-i18next'
 
 
 const TechnologiesUsed = () => {
+  const { t, i18n } = useTranslation()
+
   const technologies = [
     { number: 1, name: 'FrontEnd', icon: <BiLogoJavascript /> },
     { number: 2, name: 'BackEnd', icon: <FaNodeJs /> },
@@ -20,7 +23,7 @@ const TechnologiesUsed = () => {
   return (
     <div className='technologies-used mt-5 py-10 px-10' id='TechnologiesUsed'>
       <div className='container'>
-        <h3 className='text-white font-medium text-3xl'>التقنيات الذي نستخدمها</h3>
+        <h3 className='text-white font-medium text-3xl'>{t('Technologiesused-heading')}</h3>
         <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-16 text-black'>
           {technologies.map((item, index) => (
             <div className='technologies-card bg-white relative rounded-lg overflow-hidden' key={index}>

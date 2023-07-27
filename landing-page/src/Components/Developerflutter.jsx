@@ -4,13 +4,19 @@ import {TbDevicesStar} from 'react-icons/tb'
 import iphone2 from '../assets/iphone2.png'
 import {FaEarthAfrica} from "react-icons/fa6";
 import {TbDeviceMobileCode} from "react-icons/tb";
+import { t } from 'i18next';
+import { useTranslation } from 'react-i18next'
+
 
 const Developerflutter = () => {
+
+  const { t, i18n } = useTranslation()
+
   return (
     <div className=''>
       <div className=' text-center  '>
-        <h1 className='text-[#000000] text-[48px]  font-semibold '>ويمكننا <span className='text-[#37ABDE]' >تطوير تطبيقات الهاتف</span></h1>
-        <p className='text-[gray] text-[20px] font-medium m-auto max-w-[600px] md:px-[20px]'>أخبرنا بفكرة تطبيقك وسنساعدك على إحياء هذه الفكرة من خلال إنشاء تطبيقات / موقع ويب من البداية يناسب احتياجاتك</p>
+        <h1 className='text-[#000000] text-[48px]  font-semibold '>{t('DeveloperFlutter')} <span className='text-[#37ABDE]' >{t('DeveloperFlutter-span')}</span></h1>
+        <p className='text-[gray] text-[20px] font-medium m-auto max-w-[600px] md:px-[20px]'>{t('DeveloperFlutter-description')}</p>
       </div>
       <div className='imageDev w-[80%] m-auto mt-[20px] grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] text-center gap-10 '>
        <div className='left flex flex-col mt-[30px]'>
@@ -22,8 +28,8 @@ const Developerflutter = () => {
                         </span>
                     </div>
                     <div className='mx-16 flex flex-col justify-between'>
-                        <h3 className='text-right text-2xl mb-0'>كود قوي و مرن</h3>
-                        <p className='text-md'>يتم تنظيم الكود الخاص بك و تأمينه ليمنحك افضل أداء</p>
+                        <h3 className='text-right text-2xl mb-0'>{t('DeveloperFlutter-card1-title')}</h3>
+                        <p className='text-md'>{t('DeveloperFlutter-card1-description')}</p>
                     </div>
                 </div>
                 <div className='helpus-card bg-white relative rounded-lg overflow-hidden shadow-lg pb-5 h-fit'>
@@ -34,8 +40,8 @@ const Developerflutter = () => {
                         </span>
                     </div>
                     <div className='mx-16 flex flex-col justify-between'>
-                        <h3 className='text-right text-2xl mb-0'>سهل الاطلاق</h3>
-                        <p className='text-md'>سوف نقدم لك لوحه الادارة و كيفيه التعامل معها بشكل كامل</p>
+                        <h3 className='text-right text-2xl mb-0'>{t('DeveloperFlutter-card2-title')}</h3>
+                        <p className='text-md'>{t('DeveloperFlutter-card2-description')}</p>
                     </div>
                 </div>
        </div>
@@ -52,8 +58,8 @@ const Developerflutter = () => {
                         </span>
                     </div>
                     <div className='mx-10 flex flex-col justify-between'>
-                        <h3 className='text-right text-2xl mb-0'>تصميم واجهة المستخدم</h3>
-                        <p className='text-md'>من خلال تزودنا بما تحتاجه سنعمل علي انشاء واجهه مصتخدم سهله و مرنه</p>
+                        <h3 className='text-right text-2xl mb-0'>{t('DeveloperFlutter-card3-title')}</h3>
+                        <p className='text-md'>{t('DeveloperFlutter-card3-description')}</p>
                     </div>
                 </div>
                 <div className='helpus-card bg-white relative rounded-lg overflow-hidden shadow-lg pb-5 h-fit'>
@@ -64,8 +70,8 @@ const Developerflutter = () => {
                         </span>
                     </div>
                     <div className='mx-16 flex flex-col justify-between'>
-                        <h3 className='text-right text-2xl mb-0'>السرعة</h3>
-                        <p className='text-md'>نحن مرنون في التعديلات ومع اخراج المشروع بأعلى جوده</p>
+                        <h3 className='text-right text-2xl mb-0'>{t('DeveloperFlutter-card4-title')}</h3>
+                        <p className='text-md'>{t('DeveloperFlutter-card4-description')}</p>
                     </div>
                 </div>
        </div>
