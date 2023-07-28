@@ -5,32 +5,22 @@ import ThemeSwitcher from "../ThemeSwitcher.jsx";
 import i18n from "../../i18.js";
 import { useTranslation } from 'react-i18next'
 
-
-const navigation = [
-  { name: "الرئسيه", href: "#Home", current: true },
-  { name: "من نحن", href: "#AboutUs", current: false },
-  { name: "خدمانتا", href: "#Services", current: false },
-  { name: "التقنيات", href: "#TechnologiesUsed", current: false },
-  { name: "فريق العمل", href: "#Team", current: false },
-];
-
-const navigationEn = [
-  { name: "Home", href: "#Home", current: true },
-  { name: "AboutUs", href: "#AboutUs", current: false },
-  { name: "Services", href: "#Services", current: false },
-  { name: "Technologies", href: "#TechnologiesUsed", current: false },
-  { name: "Team", href: "#Team", current: false },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-
-
-
 export default function Navbar() {
-  const { t, i18n } = useTranslation()
+
+const { t, i18n } = useTranslation()
+  
+const navigation = [
+  { name: t('Navbar-title1') , href: "#Home", current: true },
+  { name: t('Navbar-title2') , href: "#AboutUs", current: false },
+  { name: t('Navbar-title3') , href: "#Services", current: false },
+  { name: t('Navbar-title4') , href: "#TechnologiesUsed", current: false },
+  { name: t('Navbar-title5') , href: "#Team", current: false },
+];
+
   return (
     <Disclosure as="nav" className="bg-gray-100 dark:bg-slate-800">
       {({ open }) => (

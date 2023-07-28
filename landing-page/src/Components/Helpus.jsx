@@ -16,77 +16,38 @@ function Helpus() {
 
     const helpus = [
         {
-            heading: 'الاتصال بك',
-            description: 'أخبرنا بأي شئ تريد تصميمه',
+            heading: t('helpus-card1-title'),
+            description: t('helpus-card1-description'),
             icon: <FiPhoneCall/>,
             number: 1
         },
         {
-            heading: 'الخطة',
-            description: 'سوف نقوم بعمل خطه بناء متكامله',
+            heading: t('helpus-card2-title'),
+            description: t('helpus-card2-description'),
             icon:<IoEarthOutline/>,
             number: 2
         },
         {
-            heading: 'التصميم',
-            description: 'تصميم الواجهات تصميم مرن و فعال مع المستخدم',
+            heading: t('helpus-card3-title'),
+            description: t('helpus-card3-description'),
             icon: <MdDesignServices/>,
             number: 3
         },
         {
-            heading: 'البرمجة',
-            description: 'نقوم بكتابه الكود و عمل قواعد البيانات و ربطها',
+            heading: t('helpus-card4-title'),
+            description: t('helpus-card4-description'),
             icon: <BiCodeCurly/>,
             number : 4
         },
         {
-            heading: 'الفحص النهائى',
-            description: 'سوف نقوم بفحص الكود و تأمينه من الثغرات',
+            heading: t('helpus-card5-title'),
+            description: t('helpus-card5-description'),
             icon: <TbBrandSpeedtest/>,
             number : 5
         },
         {
-            heading: 'النشر',
-            description: 'سوف نقوم برفع التطبيق او الموقع و نشرة لتبدا بجني الارباح',
-            icon: <RiMoneyDollarCircleLine/>,
-            number: 6
-        },
-
-    ]
-    const helpusen = [
-        {
-            heading: 'Calling you',
-            description: 'Tell us anything you want to design',
-            icon: <FiPhoneCall/>,
-            number: 1
-        },
-        {
-            heading: 'Plan',
-            description: 'We will make an integrated building plan',
-            icon:<IoEarthOutline/>,
-            number: 2
-        },
-        {
-            heading: 'Design',
-            description: 'Interface design is flexible and effective design with the user',
-            icon: <MdDesignServices/>,
-            number: 3
-        },
-        {
-            heading: 'Programming',
-            description: 'We write the code and create databases and link them',
-            icon: <BiCodeCurly/>,
-            number : 4
-        },
-        {
-            heading: 'Final Check',
-            description: 'We will check the code and secure it from vulnerabilities',
-            icon: <TbBrandSpeedtest/>,
-            number : 5
-        },
-        {
-            heading: 'Publish',
-            description: 'We will upload the application or website and a newsletter to start making profits',
+            heading: t('helpus-card6-title'),
+            description: t('helpus-card6-description'),
             icon: <RiMoneyDollarCircleLine/>,
             number: 6
         },
