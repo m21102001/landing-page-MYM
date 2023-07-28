@@ -106,6 +106,8 @@ const navigation = [
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
                             onClick={() => {
+                              document.documentElement.dir='ltr'
+                              document.documentElement.lang = 'en';
                               i18n.changeLanguage("en");
                             }}
                           >
@@ -122,6 +124,8 @@ const navigation = [
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
                             onClick={() => {
+                              document.documentElement.dir='rtl'
+                              document.documentElement.lang = 'ar';
                               i18n.changeLanguage("ar");
                             }}
                           >
