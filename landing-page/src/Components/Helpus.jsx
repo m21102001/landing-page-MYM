@@ -73,7 +73,7 @@ function Helpus() {
   return (
     <div className='helpus_container' id='Help-us'>
     <h1 className='helpus_heading text-3xl font-bold text-center'>{t('helpus-heading')} <span style={{color: "#37ABDE"}}>{t('helpus-span')}</span></h1>
-    <p className='helpus_description text-2xl pt-2'>{t('helpus-description')}</p>
+    <p className='helpus_description text-center text-2xl pt-2'>{t('helpus-description')}</p>
     <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-16 px-12'>
         {listItems}
     </div>
