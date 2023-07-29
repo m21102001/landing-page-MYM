@@ -14,7 +14,6 @@ const LandTeam = () => {
 
 
   const [images, setImage] = useState(Data);
-  console.log(Data);
   const [filter, setFilter] = useState("all");
   const HandelJobfilter = (job) => {
     setFilter(job);
@@ -26,7 +25,7 @@ const LandTeam = () => {
     <div className="  content w-full p-0 m-0 justify-center " id="Team">
       <div className="container-Landing">
         <div className="head">
-          <h2 className="text-center pt-20 text-5xl font-bold">{t('Team-heading')}</h2>
+          <h2 className="text-center pt-20 text-4xl font-bold">{t('Team-heading')}</h2>
         </div>
         <div className="pt-8 text-center">
           <ul className="flex flex-wrap justify-center">

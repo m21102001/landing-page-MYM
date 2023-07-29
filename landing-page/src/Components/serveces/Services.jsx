@@ -69,8 +69,8 @@ export default function Services() {
   return (
     <div className='services py-10' id='Services'>
       <div className="py-5 services-tital ">
-      <h3 className='mb-2 text-2xl font-bold tracking-tight text-white'>{t('Services-title')}</h3>
-      <p className='mb-3 font-normal text-white'>{t('Services-description')}</p>
+      <h3 className='mb-2 text-center text-4xl font-bold tracking-tight text-white'>{t('Services-title')}</h3>
+      <p className='mb-3 font-normal text-center text-2xl text-white'>{t('Services-description')}</p>
       </div>
       <Swiper
         centeredSlides={true}
