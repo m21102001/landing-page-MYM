@@ -1,7 +1,7 @@
 import Navbar from "../navbar/Navbar"
 import './headar.css'
 import { useTranslation } from 'react-i18next'
-
+import Saly from "../../assets/Saly-19.png"
 
 const Header = () => {
     const { t, i18n } = useTranslation()
@@ -18,7 +18,7 @@ const Header = () => {
                     <button>{t('button')}</button>
                 </div>
                 <div className='header-image'>
-                     <img className='' src='src/assets/images/Saly-19.png' alt='image'/>
+                     <img className='' src={Saly} alt='image'/>
                 </div>
             </div>
         </div>
