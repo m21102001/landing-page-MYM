@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import ThemeSwitcher from "../ThemeSwitcher.jsx";
 import i18n from "../../i18.js";
 import { useTranslation } from 'react-i18next'
-import {logo} from  './logo.jpg'
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -42,7 +42,7 @@ const navigation = [
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-8 w-auto"
-                    src= {logo}
+                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                     alt="Your Company"
                   />
                 </div>
@@ -54,8 +54,8 @@ const navigation = [
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            ? "bg-[#FF1013] text-white"
+                            : "text-[#FF1013] hover:bg-[#FF1013] hover:text-white",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}

@@ -1,3 +1,11 @@
+
+:root {
+    ---color: #FF1013;
+    --background-color: #fff;
+    --text-color:gray;
+  
+  }
+
 .header{
     height: 100vh;
     background-image: url("../../assets/Background.png");
@@ -31,19 +39,19 @@
     align-items: center;
     gap: 12px;
     border-radius: 12px;
-    background: #37ABDE;
+    background: var(---color);
 }
 
 .header .header-text button:hover {
     background-color: transparent;
-    border:1px solid #37ABDE;
+    border:1px solid var(---color);
 }
 
  .header::after {
     position: absolute;
     bottom: 0;
     content: "";
-    background-color: #3FB3E6;
+    background-color: var(---color);
     width: 100%;
     height: 100px;
     opacity: 0.6;
