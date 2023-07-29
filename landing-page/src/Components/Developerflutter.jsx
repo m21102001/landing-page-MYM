@@ -13,7 +13,7 @@ const Developerflutter = () => {
   const { t, i18n } = useTranslation()
 
   return (
-    <div className=''>
+    <div className='mt-5'>
       <div className=' text-center  '>
         <h1 className='text-[#000000] text-4xl font-bold '>{t('DeveloperFlutter')} <span className='text-[#37ABDE]' >{t('DeveloperFlutter-span')}</span></h1>
         <p className='text-[gray] text-2xl pt-2 m-auto max-w-[600px] md:px-2'>{t('DeveloperFlutter-description')}</p>
