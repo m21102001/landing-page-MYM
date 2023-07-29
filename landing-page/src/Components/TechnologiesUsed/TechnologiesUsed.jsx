@@ -16,14 +16,14 @@ const TechnologiesUsed = () => {
     { number: 2, name: 'BackEnd', icon: <FaNodeJs /> },
     { number: 3, name: 'Flutter', icon: <BiLogoFlutter /> },
     { number: 4, name: 'UI/UX', icon: <FiFigma /> },
-    { number: 5, name: 'Cyber Security', icon: <GiCyberEye /> },
+    { number: 5, name: 'CyberSecurity', icon: <GiCyberEye /> },
     { number: 6, name: 'Java', icon: <BiLogoJava /> },
   ];
 
   return (
     <div className='technologies-used mt-5 py-10 px-10' id='TechnologiesUsed'>
       <div className='container'>
-        <h3 className='text-white font-medium text-3xl'>{t('Technologiesused-heading')}</h3>
+        <h3 className='text-center text-white font-bold text-3xl'>{t('Technologiesused-heading')}</h3>
         <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-16 text-black'>
           {technologies.map((item, index) => (
             <div className='technologies-card bg-white relative rounded-lg overflow-hidden' key={index}>

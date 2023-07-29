@@ -26,7 +26,7 @@ function App() {
         <ContactUs/>
         <Footer/>
         <div className="w-12 h-12 fixed left-5 bottom-5 rounded-lg bg-green-500 hover:bg-green-600 active:bg-lime-500 focus:outline-none focus:ring focus:ring-lime-300 flex flex-row justify-center items-center">
-          <a href="https://wa.me/qr/2PUHCENU7QALF1" alt='whatspp' >
+          <a href="https://wa.me/qr/2PUHCENU7QALF1" target={"_blank"} >
         <BsWhatsapp className='social-media' style={{color:'#fff'}} />
           </a>
         </div>

@@ -15,8 +15,8 @@ const Developerflutter = () => {
   return (
     <div className=''>
       <div className=' text-center  '>
-        <h1 className='text-[#000000] text-[48px]  font-semibold '>{t('DeveloperFlutter')} <span className='text-[#37ABDE]' >{t('DeveloperFlutter-span')}</span></h1>
-        <p className='text-[gray] text-[20px] font-medium m-auto max-w-[600px] md:px-[20px]'>{t('DeveloperFlutter-description')}</p>
+        <h1 className='text-[#000000] text-4xl font-bold '>{t('DeveloperFlutter')} <span className='text-[#37ABDE]' >{t('DeveloperFlutter-span')}</span></h1>
+        <p className='text-[gray] text-2xl pt-2 m-auto max-w-[600px] md:px-2'>{t('DeveloperFlutter-description')}</p>
       </div>
       <div className='imageDev w-[80%] m-auto mt-[20px] grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] text-center gap-10 '>
        <div className='left flex flex-col mt-[30px]'>
@@ -28,7 +28,7 @@ const Developerflutter = () => {
                         </span>
                     </div>
                     <div className='mx-16 flex flex-col justify-between'>
-                        <h3 className='text-right text-2xl mb-0'>{t('DeveloperFlutter-card1-title')}</h3>
+                        <h3 className='text-2xl mb-0'>{t('DeveloperFlutter-card1-title')}</h3>
                         <p className='text-md'>{t('DeveloperFlutter-card1-description')}</p>
                     </div>
                 </div>
@@ -40,14 +40,14 @@ const Developerflutter = () => {
                         </span>
                     </div>
                     <div className='mx-16 flex flex-col justify-between'>
-                        <h3 className='text-right text-2xl mb-0'>{t('DeveloperFlutter-card2-title')}</h3>
+                        <h3 className='text-2xl mb-0'>{t('DeveloperFlutter-card2-title')}</h3>
                         <p className='text-md'>{t('DeveloperFlutter-card2-description')}</p>
                     </div>
                 </div>
        </div>
                 
-       <div className='iphoneimage sm:hidden md:hidden lg:block'>
-        <img src={iphone2} alt="iphone-image" className='w-full' />
+       <div className='iphoneimage'>
+        <img src={iphone2} alt="iphone-image" className='w-full mt-32' />
        </div>
        <div className='left flex flex-col mt-[30px]'>
        <div className='helpus-card mb-[16px] bg-white relative rounded-lg overflow-hidden shadow-lg pb-5 h-fit'>
@@ -58,7 +58,7 @@ const Developerflutter = () => {
                         </span>
                     </div>
                     <div className='mx-10 flex flex-col justify-between'>
-                        <h3 className='text-right text-2xl mb-0'>{t('DeveloperFlutter-card3-title')}</h3>
+                        <h3 className=' text-2xl mb-0'>{t('DeveloperFlutter-card3-title')}</h3>
                         <p className='text-md'>{t('DeveloperFlutter-card3-description')}</p>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ const Developerflutter = () => {
                         </span>
                     </div>
                     <div className='mx-16 flex flex-col justify-between'>
-                        <h3 className='text-right text-2xl mb-0'>{t('DeveloperFlutter-card4-title')}</h3>
+                        <h3 className=' text-2xl mb-0'>{t('DeveloperFlutter-card4-title')}</h3>
                         <p className='text-md'>{t('DeveloperFlutter-card4-description')}</p>
                     </div>
                 </div>
