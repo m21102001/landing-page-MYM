@@ -112,7 +112,7 @@ const LandTeam = () => {
                   <img
                     src={data.link}
                     alt=""
-                    className="w-full h-40 object-cover mb-4 rounded-[50%]"
+                    className="w-full h-full object-cover mb-4 rounded-[9%]"
                   />
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{data.Name}</h3>
