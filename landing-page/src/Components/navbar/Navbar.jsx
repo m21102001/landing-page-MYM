@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import ThemeSwitcher from "../ThemeSwitcher.jsx";
 import i18n from "../../i18.js";
 import { useTranslation } from 'react-i18next'
-
+import {logo} from  './logo.jpg'
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -42,7 +42,7 @@ const navigation = [
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    src= {logo}
                     alt="Your Company"
                   />
                 </div>
