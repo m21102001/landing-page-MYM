@@ -1,12 +1,14 @@
 import Data from "../data.json";
 import { FaGithub, FaLinkedin, FaBehance } from "react-icons/fa";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-import { useTranslation } from "react-i18next";
+
 import "./LandTeam.css";
+import { Navigation, Pagination } from "swiper/modules";
+import { useTranslation } from 'react-i18next'
+
 
 const LandTeam = () => {
   const { t, i18n } = useTranslation();
@@ -93,9 +95,13 @@ const LandTeam = () => {
             centeredSlides={true}
             spaceBetween={20}
             pagination={{
-              clickable: true
+              clickable: true,
+              type: "progressbar",
+
             }}
-            modules={[Pagination]}
+            // modules={[]}
+            navigation={true}
+            modules={[Pagination, Navigation]}
             breakpoints={{
               // Set different settings for different screen sizes
               768: {
@@ -118,25 +124,30 @@ const LandTeam = () => {
                     className="w-full h-full object-cover mb-4 rounded-xl"
                   />
                   <div>
-                    <h3 className="text-2xl font-semibold mb-2">{data.Name}</h3>
-                    <p className="text-gray-600 mb-4 text-xl"> {data.job}</p>
-                    <div className=" flex space-x-2 space-x-reverse justify-center">
+                    <h3 className="text-xl font-semibold mb-2 text-black">{data.Name}</h3>
+                    <p className="text-gray-600 mb-4"> {data.job}</p>
+                    <div className="flex space-x-2 justify-center">
                       <a
                         href={data.Linked}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="px-2"
                       >
-                        <FaLinkedin className="rounded-full text-[#FF1013] bg-white text-2xl" />
+                        <FaLinkedin className="h-7 w-7 rounded-full text-[#37ABDE] bg-[#fff]" />
                       </a>
                       <a
                         href={data.github}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="px-2 "
                       >
-                        <FaGithub className="rounded-full text-[#FF1013] bg-white text-2xl" />
+                        <FaGithub className="h-7 w-7 rounded-full text-[#37ABDE] bg-[#fff]" />
                       </a>
-                      <a href="" target="_blank" rel="noopener noreferrer">
-                        <FaBehance className="rounded-full text-[#FF1013] bg-white text-2xl" />
+                      <a href="" target="_blank" rel="noopener noreferrer"
+                        className="px-2"
+                      >
+                        <FaBehance className="h-7 w-7 rounded-full text-[#37ABDE] bg-[#fff]" />
+
                       </a>
                     </div>
                   </div>
