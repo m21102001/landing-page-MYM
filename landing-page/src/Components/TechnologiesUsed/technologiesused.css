@@ -37,5 +37,4 @@
 
 .technologies-card:hover .technologies-name {
     color: white;
-    background-color:var(---color) ;
 }

@@ -43,7 +43,8 @@ const navigation = [
                   <img
                     className="h-8 w-auto"
                     // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    src="../../assets/logo2.jpg"
+                    src="./assets/logo.jpg"
+                    // src="https://pin.it/6hewgDe"
                     alt="Your Company"
                   />
                 </div>
