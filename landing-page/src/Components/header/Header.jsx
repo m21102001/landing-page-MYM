@@ -2,6 +2,9 @@ import Navbar from "../navbar/Navbar"
 import './headar.css'
 import { useTranslation } from 'react-i18next'
 import Saly from "../../assets/Saly-19.png"
+import { FaFacebook, FaLinkedin, FaInstagram, FaTwitter} from "react-icons/fa";
+import { FiYoutube } from "react-icons/fi";
+
 
 const Header = () => {
     const { t, i18n } = useTranslation()
@@ -20,6 +23,25 @@ const Header = () => {
                 </div>
                 <div className='header-image'>
                      <img className='' src={Saly} alt='image'/>
+                </div>
+            </div>
+            <div className="Header-footer" >
+                    {/* <img src={HeaderFrame} style={{width:"100%" ,marginTop:"-6rem"}} alt="" /> */}
+                <div className="Header-footer-container">
+                    <div>
+                    <h3>{t('Header-Footer-heading')}</h3>
+                    <p>{t('Header-Footer-description')}</p>
+                    </div>
+                    <div>
+                        <h4>{t('Header-Footer-heading2')}</h4>
+                        <div className="HeaderFooter_icons">
+                            <div className="icon"><FaLinkedin/></div>
+                            <div className="icon"><FiYoutube/></div>
+                            <div className="icon"><FaInstagram/></div>
+                            <div className="icon"><FaTwitter/></div>
+                            <div className="icon"><FaFacebook/></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
