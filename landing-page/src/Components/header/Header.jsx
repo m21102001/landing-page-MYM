@@ -15,7 +15,8 @@ const Header = () => {
                         {t('Header-title')}<span className='text-[#FF1013] p-1'>{t('Header-span1')}</span> {t('Header-span2')}
                     </h1>
                     <h5 className='my-4 text-2xl'>{t('Header-description')}</h5>
-                    <button><a rel='' href="https://wa.me/qr/2PUHCENU7QALF1" target="_blank">{t('button')}</a></button>
+                    {/* <button><a rel='noreferrer' href="https://wa.me/qr/2PUHCENU7QALF1" target="_blank">{t('button')}</a></button> */}
+                    <a rel='noreferrer' href="https://wa.me/201126765371" target="_blank"><button>{t('button')}</button></a>
                 </div>
                 <div className='header-image'>
                      <img className='' src={Saly} alt='image'/>
