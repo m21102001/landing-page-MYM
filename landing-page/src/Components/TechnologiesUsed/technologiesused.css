@@ -1,9 +1,17 @@
+:root {
+    ---color: #FF1013;
+    --background-color: #fff;
+    --text-color:gray;
+  
+  }
+
+
 .technologies-used{
     background-color: #171836;
 }
 
 .technologies-number {
-    background-color: #37ABDE;
+    background-color: var(---color);
     color: #fff;
     width: 60px;
     height: 60px;
@@ -22,9 +30,9 @@
 }
 
 .technologies-card:hover .technologies-number {
-    box-shadow: 0 0 0 500px #37ABDE;
+    box-shadow: 0 0 0 500px var(---color);
     background-color: white;
-    color: #37ABDE;
+    color:var(---color);
 }
 
 .technologies-card:hover .technologies-name {

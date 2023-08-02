@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import ThemeSwitcher from "../ThemeSwitcher.jsx";
+import flag from "../../assets/images/NationalFlagOfEgypt.png"
+import logo from "../../assets/images/Logo.png"
 import i18n from "../../i18.js";
 import { useTranslation } from 'react-i18next'
 
@@ -40,11 +42,7 @@ const navigation = [
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
+                  <img src={logo} className="h-8 w-auto" alt="Your Company"/>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4 mr-8">
@@ -54,8 +52,8 @@ const navigation = [
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            ? "bg-[#FF1013] text-white"
+                            : "text-[#FF1013] hover:bg-[#FF1013] hover:text-white",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -82,7 +80,7 @@ const navigation = [
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src={flag}
                         alt=""
                       />
                     </Menu.Button>

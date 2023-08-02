@@ -1,17 +1,17 @@
 import Data from "../data.json";
 import { FaGithub, FaLinkedin, FaBehance } from "react-icons/fa";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+
+import "./LandTeam.css";
+import { Navigation, Pagination } from "swiper/modules";
 import { useTranslation } from 'react-i18next'
 
 
 const LandTeam = () => {
-
-  const { t, i18n } = useTranslation()
-
+  const { t, i18n } = useTranslation();
 
   const [images, setImage] = useState(Data);
   const [filter, setFilter] = useState("all");
@@ -25,60 +25,65 @@ const LandTeam = () => {
     <div className="  content w-full p-0 m-0 justify-center " id="Team">
       <div className="container-Landing">
         <div className="head">
-          <h2 className="text-center pt-20 text-4xl font-bold">{t('Team-heading')}</h2>
+          <h2 className="text-center pt-20 text-4xl font-bold">
+            {t("Team-heading")}
+          </h2>
         </div>
-        <div className="pt-8 text-center">
-          <ul className="flex flex-wrap justify-center">
-          <li className="p-3 rounded-lg">
+        <div className=" button pt-8 text-center">
+          <ul className=" list flex flex-wrap justify-center">
+            <li className="p-3 rounded-lg">
               <button
                 onClick={() => HandelJobfilter("all")}
-                className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D]   rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white"
+                className="border  p-2 text-center w-32 bg-white text-text-color
+                  rounded-lg font-custom transition duration-300 ease-in-out transform 
+                  "
               >
                 {" "}
-                {t('land-Team-All')}
+                {t("land-Team-All")}
               </button>
             </li>
             <li className="p-3 rounded-lg">
               <button
                 onClick={() => HandelJobfilter("Frontend")}
-                className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg  font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white "
+                className="border p-2 text-center w-32 bg-background-color text-text-color
+                 rounded-lg  font-custom transition duration-300 ease-in-out transform  "
               >
                 {" "}
-                {t('land-Team-Web')}
+                {t("land-Team-Web")}
               </button>
             </li>
             <li className="p-3 rounded-lg">
               <button
                 onClick={() => HandelJobfilter("Flutter")}
-                className="border border-[#37ABDE] p-2 text-center w-40 text-[14px] bg-white text-[#9D9D9D] rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white"
+                className="border  p-2 text-center w-40 text-[14px] bg-background-color text-text-color rounded-lg font-custom transition duration-300 ease-in-out transform "
               >
-                {t('land-Team-Flutter')}
+                {t("land-Team-Flutter")}
               </button>
             </li>
             <li className="p-3 rounded-lg">
               <button
                 onClick={() => HandelJobfilter("UI-UX")}
-                className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg text-[14px] font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white"
+                className="border p-2 text-center w-32 text-[#9D9D9D] rounded-lg text-[14px] font-custom transition duration-300 ease-in-out transform hover:bg-color "
               >
                 {" "}
-                {t('land-Team-UX-UI')}
+                {t("land-Team-UX-UI")}
               </button>
             </li>
             <li className="p-3 rounded-lg">
               <button
                 onClick={() => HandelJobfilter("Owner")}
-                className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white "
+                className="border  p-2 text-center w-32 bg-background-color text-text-color rounded-lg font-custom transition duration-300 ease-in-out transform hover:bg-color "
               >
                 {" "}
-                {t('land-Team-Manager')}
+                {t("land-Team-Manager")}
               </button>
             </li>
             <li className="p-3 rounded-lg">
               <button
                 onClick={() => HandelJobfilter("Back-End")}
-                className="border border-[#37ABDE] p-2 text-center w-32 bg-white text-[#9D9D9D] rounded-lg  font-custom transition duration-300 ease-in-out transform hover:bg-[#37ABDE] hover:text-white active:bg-[#37ABDE] active:text-white"
+                className="border  p-2 text-center w-32 bg-background-color text-text-color rounded-lg  font-custom transition duration-300 ease-in-out transform "
               >
-                {t('land-Team-Backend')}
+                {t("land-Team-Backend")}
               </button>
             </li>
           </ul>
@@ -90,9 +95,13 @@ const LandTeam = () => {
             centeredSlides={true}
             spaceBetween={20}
             pagination={{
-              clickable: true
+              clickable: true,
+              type: "progressbar",
+
             }}
-            modules={[Pagination]}
+            // modules={[]}
+            navigation={true}
+            modules={[Pagination, Navigation]}
             breakpoints={{
               // Set different settings for different screen sizes
               768: {
@@ -112,28 +121,33 @@ const LandTeam = () => {
                   <img
                     src={data.link}
                     alt=""
-                    className="w-full h-full object-cover mb-4 rounded-[9%]"
+                    className="w-full h-full object-cover mb-4 rounded-xl"
                   />
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">{data.Name}</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-black">{data.Name}</h3>
                     <p className="text-gray-600 mb-4"> {data.job}</p>
-                    <div className="flex space-x-2 space-x-reverse justify-center">
+                    <div className="flex space-x-2 justify-center">
                       <a
                         href={data.Linked}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="px-2"
                       >
-                        <FaLinkedin className="rounded-full text-[#37ABDE] bg-[#fff]" />
+                        <FaLinkedin className="h-7 w-7 rounded-full text-[#37ABDE] bg-[#fff]" />
                       </a>
                       <a
                         href={data.github}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="px-2 "
                       >
-                        <FaGithub className="rounded-full text-[#37ABDE] bg-[#fff]" />
+                        <FaGithub className="h-7 w-7 rounded-full text-[#37ABDE] bg-[#fff]" />
                       </a>
-                      <a href="" target="_blank" rel="noopener noreferrer">
-                        <FaBehance className="rounded-full text-[#37ABDE] bg-[#fff]" />
+                      <a href="" target="_blank" rel="noopener noreferrer"
+                        className="px-2"
+                      >
+                        <FaBehance className="h-7 w-7 rounded-full text-[#37ABDE] bg-[#fff]" />
+
                       </a>
                     </div>
                   </div>

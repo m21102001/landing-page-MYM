@@ -1,3 +1,13 @@
+:root {
+    ---color: #FF1013;
+    --background-color: #fff;
+    --text-color:gray;
+  
+  }
+
+
+
+
 .helpus-container{
     margin: 4rem;
 }
@@ -5,7 +15,7 @@
 
 
 .helpus-number {
-    background-color: #37ABDE;
+    background-color: var(---color);
     color: #fff;
     width: 60px;
     height: 60px;
@@ -24,9 +34,9 @@
 }
 
 .helpus-card:hover .helpus-number {
-    box-shadow: 0 0 0 500px #37ABDE;
+    box-shadow: 0 0 0 500px var(---color);
     background-color: white;
-    color: #37ABDE;
+    color:var(---color);
 }
 
 .helpus-card:hover .helpus-name {
@@ -34,13 +44,14 @@
 }
 
 .helpus-icon {
-    color: #37ABDE;
+    color: var(---color);
     font-size: 25px;
 }
 
 .helpus-card:hover .helpus-icon {
     color: white;
 }
+
 
 .helpus-card p {
     color: gray;

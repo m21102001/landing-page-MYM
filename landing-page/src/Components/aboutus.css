@@ -1,3 +1,10 @@
+:root {
+    ---color: #FF1013;
+    --background-color: #fff;
+    --text-color:gray;
+  
+  }
+
 .aboutus-container{
     text-align: center;
     margin: 2rem;

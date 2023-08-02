@@ -15,8 +15,8 @@ const Developerflutter = () => {
   return (
     <div className='mt-5'>
       <div className=' text-center  '>
-        <h1 className='text-[#000000] text-4xl font-bold '>{t('DeveloperFlutter')} <span className='text-[#37ABDE]' >{t('DeveloperFlutter-span')}</span></h1>
-        <p className='text-[gray] text-2xl pt-2 m-auto max-w-[600px] md:px-2'>{t('DeveloperFlutter-description')}</p>
+        <h1 className='text-[#000000] text-4xl font-bold '>{t('DeveloperFlutter')} <span className='text-[#FF1013]' >{t('DeveloperFlutter-span')}</span></h1>
+        <p className='text-[gray] text-2xl pt-2 m-auto max-w-2xl md:px-2'>{t('DeveloperFlutter-description')}</p>
       </div>
       <div className='imageDev w-[80%] m-auto mt-[20px] grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] text-center gap-10 '>
        <div className='left flex flex-col mt-[30px]'>
