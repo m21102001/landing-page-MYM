@@ -91,8 +91,7 @@ const LandTeam = () => {
 
         <div className="landteam-container m-10">
           <Swiper
-            slidesPerView={"1"}
-            centeredSlides={true}
+            slidesPerView={1}
             spaceBetween={20}
             pagination={{
               clickable: true,
