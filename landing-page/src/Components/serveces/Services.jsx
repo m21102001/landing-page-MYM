@@ -75,7 +75,6 @@ export default function Services() {
       <p className='mb-3 font-normal text-center text-2xl text-white'>{t('Services-description')}</p>
       </div>
       <Swiper
-        centeredSlides={true}
         spaceBetween={10}
         autoplay={{
           delay: 2000000000,

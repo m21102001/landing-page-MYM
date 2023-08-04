@@ -25,7 +25,7 @@ const Header = () => {
                      <img className='' src={Saly} alt='image'/>
                 </div>
             </div>
-            <div className="Header-footer" >
+            <div className="Header-footer rounded-t-[30px]" >
                     {/* <img src={HeaderFrame} style={{width:"100%" ,marginTop:"-6rem"}} alt="" /> */}
                 <div className="Header-footer-container">
                     <div>
